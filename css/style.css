@@ -81,3 +81,8 @@ header {
     border-bottom: solid 2px rgba(250, 252, 250, 1);        /* 線指定 */
     border-radius: 0px 0px 160px 180px/0px 0px 20px 4px;
 }
+
+.list:hover {
+  background-color:rgba(172,209,204,1);
+
+}
