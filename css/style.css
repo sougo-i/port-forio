@@ -1,0 +1,84 @@
+* {
+  box-sizing:border-box;
+}
+
+li {
+  list-style:none;
+}
+
+.container {
+  max-width:1170px;
+  margin: 0 auto;
+}
+
+
+/* heagerここから */
+header {
+  height:65px;
+  background-color: #40e0d0;
+  color: white;
+}
+.header-left {
+  float:left;
+  
+}
+
+.header-right {
+  float:right;
+}
+
+.header-right  {
+  font-size:40px;
+  text-decoration:none;
+  color:white;
+  line-height:65px;
+  margin-right: 10px;
+
+}
+.fas,.list {
+  cursor:pointer;
+}
+
+/* headerメニュー */
+.menu {
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:1;
+  background-color:black;
+  display:none;
+}
+
+.close-btn {
+  display:flex;
+  flex-direction: column;
+  padding-right:15px;
+   line-height:65px;
+  color: white;
+  text-align:right;
+  font-size:40px;
+  border-bottom:1px solid #b0c4de;
+}
+
+
+.menu-list li  {
+  padding:0 20px;
+  margin:20px 10px;
+  font-size:30px;
+  color:#f5f5f5;
+  border-bottom: 1px solid #b0c4de;
+  cursor:pointer;
+}
+.top-menu   {
+    color:white;
+    margin-left:10px;
+    padding-left:20px;           /* デフォルトCSS打ち消し */
+    font-size:  40px;       /* 文字サイズ指定 */
+    position:  relative;    /* 位置調整 */
+    font-weight:  normal;   /* 文字の太さ調整 */
+    margin-bottom: 15px;    /* 周りの余白指定 */
+    border-bottom: solid 2px rgba(250, 252, 250, 1);        /* 線指定 */
+    border-radius: 0px 0px 160px 180px/0px 0px 20px 4px;
+}
