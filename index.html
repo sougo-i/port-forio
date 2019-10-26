@@ -8,39 +8,210 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <title>プロフィール</title>
 </head>
 <body>
   <header>
-    <div class="container">
-        <div class="header-left">
-            <img src="" alt="">
-            <p>Sougo Ito</p>
+        <div class="header-left apple">
+            <h2>Sougo Ito</h2>
         </div>
-        <div class="header-right">
-            <i class="fas fa-bars hamburger"></i>
+        <!-- wide-menuパソコン画面表示 -->
+        <div class="header-right apple">
+          <div class="wide-menu">
+              <a  href="#introduction">profile</a>
+              <a  href="#works">works</a>
+              <a href="#contact">contact</a>
+          </div>
+          <!-- md-size hamburger表示 -->
+            <a class="fas fa-bars hamburger"></a>
+            <a class="fas fa-times close-btn"></a>
             <div class="menu">
-             <a class="fas fa-times close-btn"></a>
-             <h1 class="list top-menu">メニュー</h1>
+             <h1 class="top-menu">MENU</h1>
              <ul class="menu-list">
-               <li class="list">プロフィール</li>
-               <li class="list">制作物</li>
+               <a href="#introduction"><li class="list">profile</li></a>
+               <a href="#works"><li class="list">works</li></a>
+               <a href="#contact"><li class="list">contact</li></a>
              </ul>
             </div>
           </div>
-    </div>
 </header>
-<div class="top-wrapper">
-  <div class="container">
-
+<!-- headerここまで -->
+<!-- carouselここから -->
+<div id="carouselExampleControls" class="carousel slide
+carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <!-- 画像1 -->
+    <div class="carousel-item active">
+      <img  src="img/carousel-1.jpeg" alt="空" height="700px" width="100%">
+      <div class="carousel-caption md-block">
+        <h2 class="carousel-title text-right">sky</h2>
+      </div>
+    </div>
+    <div class="carousel-bottom carousel-caption md-block">
+      <h1 id="lorde-fadein" class="carousel-message"> Welcome To My Profile Page <br>
+        enjoy your stay!</h1>
+    </div>
+    <!-- 画像2 -->
+    <div class="carousel-item">
+      <img src="img/carousel-2.jpeg" alt="海" height="700px" width="100%">
+      <div class="carousel-caption md-block">
+        <h2 class="carousel-title text-right ">ocean</h2>
+      </div>
+    </div>
+    <!-- 画像3 -->
+    <div class="carousel-item">
+      <img class="" src="img/carousel-3.jpeg" alt="大地" height="700px" width="100%">
+      <div class="carousel-caption md-block">
+        <h2 class="carousel-title text-right">earth</h2>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- carouselここまで -->
+<!-- line部分 -->
+<p class="border-line"></p>
+<!-- responsiveここから -->
+<div class="responsive-img">
+  <h1 class="mr-5 apple">responsive OK</h1>
+  <div class="responsive-left">
+    <img class="img-fluid" src="img/responsive-img.png" alt="レスポンシブのイメージ画像">
   </div>
 </div>
+<!-- responsiveここまで -->
+<!-- introductionここから -->
+<div  class="introduction-wrapper pt-5 pb-5">
+  <div class="container">
+    <section>
+        <p class="apple text-weight">About this site</p>
+        <div class="site-profile">
+          <p>このサイトは、伊東蒼梧(いとうそうご)のプロフィールサイトです。本サイトでは自身の制作物や将来にやってみたいことなどを掲載しています。</p>
+        </div>
+    </section>
+    <section id="introduction" class="pt-5">
+      <h1  class="apple pt-2 pb-5">MYPROFILE</h1>
+      <dl class="profile">
+        <dt>氏名</dt>
+        <dd>伊東&nbsp;&nbsp;蒼梧</dd>
+        <dt>年齢</dt>
+        <dd>23歳</dd>
+        <dt>出身地</dt>
+        <dd>日本&ensp;愛知県</dd>
+        <dt>趣味</dt>
+        <dd>バレーボール&ensp;読書</dd>
+        <dt>自己紹介</dt>
+        <dd>&ensp; 愛知県にある愛知大学を一年休学、一年休学したのち大学を中退、休学中ホテル業に興味を持ち大学中退後熱海のホテルに務める。ホテルの予約サイトの設定などPC業務を行ううちにネットの仕組みについて興味を持つ(html,css,js,jQuery)。 その後、フィリピンにある<a href="https://nexseed.net/" target="_brank">NexSeed</a>という英語とプログラミングスキルを学ぶことができるプログラムに1ヶ月という短い期間ではあるが参加する。
+        </dd>
+        <!-- <dt>ビジョン</dt>
+        <dd>&ensp;今日、日本では、一世帯に一台はパソコンがあり、多くの人がスマホ・iPhoneを持っている。つまり私たちは毎日のようにインターネットやゲームアプリ、SNSを利用している。だがほとんどの人がその仕組みについてまではわかっていないと思う</dd> -->
 
-
-
-
-  <footer></footer>
+      </dl>
+    </section>
+  </div>
+</div>
+<!-- introductionここまで -->
+<!-- worksここから -->
+<div class="works pb-5 pt-5">
+   <div class="container">
+     <h1 id="works" class="apple pt-2 pd-2 text-center">works</h1>
+     <p class="text-center">ここでは自分が作成したサイト・アプリなどを紹介していきます</p>
+     <p class="text-center careful">＊下記の作品はresponsive対応していないのが多数あるのでPC推奨します＊</p>
+     <div class="row row-eq-height">
+       <div class=" col-md-4 ">
+         <!-- work1 -->
+          <div class="card mb-3 ">
+            <img src="img/works-introduction.jpeg" class="card-img-top" alt="プロフィールのイメージ画像" height="230px">
+            <div class="card-body">
+               <h2 class="work-title">初期プロフィールサイト</h2>
+                <p class="card-text">フィリピンに来て最初に作ったプロフィールサイトです。最初は自分が思った通りの配置にならずに苦戦しましたが、時間をかけて調べ、2日間かけて作りました。</p>
+                <a href="works/プロフィール/index.html" target="_brank" class="btn btn-primary">初期プロフィールサイトへ</a>
+            </div>
+          </div>
+        </div>
+          <!-- work2 -->
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <img src="img/works-omikuji.jpeg" class="card-img-top" alt="おみくじのイメージ" height="230px">
+            <div class="card-body">
+              <h2 class="work-title">世界旅行おみくじ</h2>
+               <p class="card-text">jsやjQueryを使ってランダムに行き先を占えるおみくじアプリを作りました。デザイン、仕組み共によくはありませんがhtml含めて一から作りました！</p>
+              <a href="works/御神籤課題/index.html" target="_brank" class="btn btn-primary">世界旅行おみくじへ行く！</a>
+            </div>
+          </div>
+        </div>
+        <!-- work3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/works-corporate-img.jpeg" class="card-img-top" alt="企業のイメージ写真"
+            height="230px">
+            <div class="card-body">
+              <h2 class="work-title">コーポレートサイト</h2>
+              <p class="card-text">Bootstrapを使い架空の企業のサイトを作りました。Bootstrapを使うと簡単なサイトなら短時間で作れることを理解しました。ただしcssの基本ありきだと思います。</p>
+              <a href="works/コーポレートサイト/index.html" target="_brank" class="btn btn-primary">コーポレートサイトを見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- worksここまで -->
+<!-- form -->
+<form methot="POST" action="php/php_form/form.php">
+  <div class="container">
+    <h1 id="contact" class="apple pt-3 pb-3">contact</h1>
+    <dl class="contact-form mb-0 pb-5">
+        <p><span>*</span>は入力必須項目です。</p>
+      <dt>お名前<span>*</span></dt>
+      <dd>
+        <input class= px-1" type="text"placeholder="name">
+      </dd>
+      <dt>メールアドレス<span>*</span></dt>
+      <dd>
+        <input type="text" placeholder="exsample@email.com">
+      </dd>
+      <dt>内容<span>*</span></dt>
+      <dd>
+        <textarea name="message" cols="30" rows="7" placeholder="message" class="px-1"></textarea>
+      </dd>
+      <div class="button">
+          <button class="submit py-2 px-2"
+          onfocus="this.blur();">送信</button>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- formここまで -->
+<!-- 参考サイトここから -->
+<div class="reference">
+  <div class="container pt-3">
+    <p>参考サイト</p>
+    <ul class="pr-3">
+      <a href="https://nexseed.net/" target="_brank"><li>NexSeed</li></a>
+      <a href="https://www.toptal.com/designers/subtlepatterns/" target="_brank"><li>Subtle Patterns</li></a>
+      <a href="https://www.pexels.com/ja-jp/"><li>Pexels</li></a>
+    </ul>
+    <ul class="px-3">
+      <a href="https://getbootstrap.jp" target="_brank"><li>Bootstrap</li></a>
+      <a href="https://www.colordic.org"target="_brank"><li>原色大辞典</li></a>
+      <a href="https://mynavi-creator.jp/knowhow/article/cool-web-design-portfolio-sites" target="_brank"><li>マイナビクリエイター</li></a>
+    </ul>
+  </div>
+</div>
+  <footer class="mb-0 text-center">
+    <p class="mb-0 apple">(c)Sougo Ito 2019</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="css/script.js""></script>
+  <script src="js/script.js""></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

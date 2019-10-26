@@ -1,0 +1,337 @@
+* {
+  box-sizing:border-box;
+}
+
+li  {
+  list-style: none;
+  cursor:pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:1170px;
+}
+
+/* headerここから */
+header {
+  background-color:rgba(44, 168, 166,0.8);
+  height:65px;
+  width: 100%;
+  color:#fff;
+  position:fixed;
+  z-index:10;
+}
+
+header a {
+  text-decoration:none;
+  color: white;
+}
+.header-left img,a {
+  float:left;
+
+}
+
+.header-left img {
+  width:50px;
+  padding-top:5px;
+
+}
+.header-left a {
+  padding:20px;
+}
+
+.header-list a {
+  float:right;
+  padding:20px 20px;
+  cursor:pointer;
+}
+
+header a:visited {
+  color:white;
+}
+
+header a:hover {
+  background-color:rgba(44, 168, 166,1);
+}
+/*mainここから*/
+.main {
+  height:100vh;
+  background-image:url(../img/background1.jpg);
+  background-size:cover;
+}
+
+.main h1 {
+  font-weight:bold;
+  color:white;
+  text-align:center;
+  font-size:95px;
+  letter-spacing:5px;
+  padding-top:100px;
+}
+
+.main span {
+  color:yellow;
+}
+
+/*introduction*/
+.introduction {
+  background-color:#e6e6fa;
+  height:600px;
+  padding-bottom:30px;
+  border:2px solid #b0c4de;
+  
+}
+
+
+.top {
+  text-align: center;
+  font-size:50px;
+  padding-top:50px;
+  padding-bottom:20px;
+}
+
+.prof2 {
+  width:100px;
+}
+
+.int {
+  border:2px solid black;
+  float: left;
+  margin-right:10px;
+  height:400px;
+  width:32%;
+  text-align: center;
+  padding-top:30px;
+
+}
+
+.name h1 {
+  font-size:50px;
+  padding-bottom:70px;
+  letter-spacing: 10px;
+}
+
+.name,.age h2 {
+  font-size:60px;
+}
+
+.age h1 {
+  font-size:50px;
+  padding-bottom: 70px;
+  letter-spacing: 10px;
+}
+
+.from h1 {
+  font-size:50px;
+  padding-bottom:60px;
+  letter-spacing: 10px;
+}
+
+.from img {
+  width:60%;
+  height:40%;
+  border-radius: 15px;
+}
+
+.from h2 {
+  font-size:50px;
+}
+
+/*introductionここまで*/
+
+/*purpos*/
+.purpose {
+  background-color:#ffefd5;
+}
+.purposea {
+ border:5px dotted #4169e1;
+ padding:10px 0px;
+ 
+
+  
+}
+
+.goal {
+  width:4%;
+  margin-right:10px;
+}
+
+#goal {
+  text-align: center;
+  font-size:50px;
+  padding:50px 0;
+}
+
+.english,.writing,.programming {
+  display:flex;
+
+}
+
+.english img {
+  width:35%;
+  
+}
+
+.english h2 {
+  font-size:50px;
+  padding:100px 50px 50px 70px;
+  display: none;
+}
+
+.english span {
+  color:#ffa500;
+}
+
+.writing {
+  margin-top:20px;
+  padding-bottom:20px;
+
+}
+
+.we {
+  width:65%;
+  float:left;
+
+}
+.image {
+  float:right;
+}
+
+.img {
+  width:100%;
+  padding-left:50px;
+
+  
+}
+
+.writing h2 {
+  font-size:50px;
+  padding:70px 30px 30px 70px;
+  display: none;
+
+}
+.add-text {
+  opacity:1;
+}
+
+.writing span {
+  color:#ffa500;
+}
+
+.programming {
+  margin:20px 0px;
+}
+
+.programming img {
+  width:40%;
+  padding-left:30px;
+　
+
+}
+
+.programming h2 {
+  font-size:40px;
+  padding:70px 10px 0px 40px;
+  display:none;
+}
+
+.programming span {
+  color:#ffa500;
+}
+
+/*purposeここまで*/
+
+/*challengeここから*/
+.challenge {
+  text-align:center;
+  background-color:#fff0f5;
+}
+.challenge-img {
+  width:10%;
+}
+
+.challenge h1 {
+  font-size:50px;
+  padding:50px 0 30px 0;
+
+}
+.challenge-list ul {
+  
+  padding-bottom:30px;
+}
+ .challenge-list li {
+  
+  width:100%;
+ }
+
+ .challenge-list img {
+  width:500%;
+  height:300px;
+  margin-left:400px;
+ }
+
+ .btn-wrapper {
+  font-size:20px;
+  padding:20px 0;
+ }
+
+ .index-btn {
+  display:inline-block;
+  color:#4e90af;
+  background-color:#e0f5ff;
+  width:20%;
+  padding:6px 0;
+  margin:0 10px;
+  border-radius: 5px;
+  cursor:pointer;
+ }
+
+ .index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+ }
+
+ 
+
+ .slides img {
+  width:400px;
+  
+ }
+
+.slide {
+  display: none;
+ }
+
+.active {
+  display: block;
+ }
+/*challengeここまで*/
+
+/*last-messageここから*/
+.last-message {
+  background-color:#fff8dc;
+  text-align:center;
+  padding:200px;
+  font-size:500%;
+}
+
+.last-message p {
+  font-size:5px;
+}
+/*footerここから*/
+footer {
+  height:65px;
+  background-color:#696969;
+  text-align:center;
+  border:1px solid #f5fffa;
+  color:white;
+}
+
+footer p {
+  font-size:10px;
+  line-height:65px;
+}
+
+/* footerここまで */
+
+

@@ -1,5 +1,60 @@
-@media(max-width:1170px) {
+@media screen and (max-width:700px) { 
+  /* header部分 */
+  header {
+    padding:0 30px;
+  }
   .hamburger {
-    margin-right:55px;
+    display:block;
+  }
+  .wide-menu {
+    display:none;
+  }
+  /* headerここまで */
+  /* carouselここから */
+  .carousel img {
+    height:500px;
+  }
+  .carousel-message {
+    position: relative;
+    top:100px;
+    font-size:40px;
+  }
+  /* carouselここまで */
+  .responsive-img {
+    display:flex;
+    flex-direction:column;
+  }
+  .responsive-img h1 {
+    font-size:3rem;
+  }
+
+  .card img {
+    height:300px;
+  }
+
+}
+
+@media screen and (min-width:710px) { 
+  .menu-list,.menu,.hamburger,.close-btn,.top-menu {
+    display:none;
+  }
+  .hamburger::before,.close-btn::before {
+    display:none;
+  }
+}
+
+/* ipad,ipadPro専用 */
+@media (min-width:768px) and (max-width:1024px) {
+  .card-body a {
+    font-size:60%;
+  }
+}
+
+@media(max-width:480px) {
+  input,textarea{
+    width:100%;
+  }
+  .contact-form dt {
+    width:100%;
   }
 }
