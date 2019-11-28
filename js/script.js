@@ -15,7 +15,7 @@ $(function() {
     $('.hamburger').show(600);
   });
   // ナビゲーション
-  $('.wide-menu a').click(function() {
+  $('.wide-menu a,.menu-list a').click(function() {
     let href=$(this).attr('href');
     let scroll=$(href).offset().top;
     $('html,body').animate({'scrollTop':scroll},500);
